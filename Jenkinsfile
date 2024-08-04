@@ -1,5 +1,6 @@
 pipeline {
-    docker { image 'gradle:8.2.0-jdk17-alpine' }
+    agent {docker { image 'gradle:8.2.0-jdk17-alpine' }}
+
 
     stages {
         stage('Build') {
@@ -18,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // 这里可以添加部署相关的命令
-                 sh 'gradle --version'
+                 sh 'gradle --version'git
             }
         }
     }
