@@ -1,5 +1,5 @@
 pipeline {
-    agent {dockerContainer { image 'gradle:8.2.0-jdk17-alpine' }}
+    agent {label 'agent1'}
 
 
     stages {
