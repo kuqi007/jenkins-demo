@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // 这里可以添加部署相关的命令
-                 sh 'gradle --version'git
+                 sh 'gradle --version'
             }
         }
     }
